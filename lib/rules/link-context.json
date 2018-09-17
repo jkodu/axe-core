@@ -1,0 +1,21 @@
+{
+  "id": "link-context",
+  "selector": "a[href]",
+  "tags": [
+    "wcag2a",
+    "wcag244",
+    "cat.text-alternatives",
+    "best-practice"
+  ],
+  "metadata": {
+    "description": "Link can be determied by it contaxt",
+    "help": "Make sure links are not to ambigues from other links"
+  },
+  "all": [
+    "link-context-header"
+  ],
+  "any": [
+  ],
+  "none": [
+  ]
+}

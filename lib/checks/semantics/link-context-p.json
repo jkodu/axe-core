@@ -1,0 +1,11 @@
+{
+  "id": "link-context-p",
+  "evaluate": "link-context-p.js",
+  "metadata": {
+    "impact": "serious",
+    "messages": {
+      "pass": "context of link can be determed by link text",
+      "fail": "context of link can not be determed by link text"
+    }
+  }
+}

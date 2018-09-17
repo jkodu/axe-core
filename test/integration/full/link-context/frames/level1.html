@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>No lang test</title>
+	<meta charset="utf8">
+	<script src="/axe.js"></script>
+</head>
+<body>
+  <p>
+  <a href="#" id="pass1">pass 1</a>
+  </p>
+
+  <p>
+  <a href="#" id="violation1">fail 1</a>
+  <a href="#" id="violation2">fail 1</a>
+  </p>
+
+  <ul>
+  <li>
+  <a href="#" id="pass2">pass 2</a>
+  </li>
+  <li>
+  <a href="#" id="violation3">fail 2</a>
+  <a href="#" id="violation4">fail 2</a>
+  </li>
+  </ul>
+
+  <table>
+  <tr>
+  <th>
+  <a href="#" id="violation5">fail 3</a>
+  </th>
+  </tr>
+  <tr>
+  <td>
+  <a href="#" id="pass3">pass 3</a>
+  <a href="#" id="violation6">fail 3</a>
+  </td>
+  </tr>
+  </table>
+	<iframe id="frame2" src="level2.html"></iframe>
+	<iframe id="frame3" src="level2-a.html"></iframe>
+</body>
+</html>

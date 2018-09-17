@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<title>link-context test</title>
+	<meta charset="utf8">
+	<link rel="stylesheet" type="text/css" href="/node_modules/mocha/mocha.css" />
+	<script src="/node_modules/mocha/mocha.js"></script>
+	<script src="/node_modules/chai/chai.js"></script>
+	<script src="/axe.js"></script>
+	<script>
+		mocha.setup({
+			timeout: 10000,
+			ui: 'bdd'
+		});
+		var assert = chai.assert;
+	</script>
+</head>
+<body>
+<div id="fixture">
+  <div>
+    <a href="#11" id="pass1">pass 1</a>
+    <h1>This headline first</h1>
+  </div>
+    <a href="#12" id="pass2">pass 1</a>
+  <div>
+  <h1>This headline</h1>
+    <a href="#1" id="violation1">fail 5</a>
+    <a href="#2" id="violation2">fail 5</a>
+    <a href="#3" id="pass3">pass 1</a>
+    <h2>This headline 2</h2>
+    <a href="#3" id="pass4">pass 1</a>
+    <div>
+      <h2>Next stuff</h2>
+    </div>
+    <a href="#4" id="violation3">fail 5</a>
+    <a href="#5" id="violation4">fail 5</a>
+  </div>
+  <div>
+    <div>
+      <a href="#8" id="pass5">pass 1</a>
+    </div>
+    <a href="#7" id="violation5">fail 5</a>
+    <h2>t2</h2>
+    <a href="#8" id="pass6">pass 1</a>
+    <div>
+    <a href="#8" id="violation6">fail 5</a>
+    </div>
+  </div>
+  <div>
+    <a href="#9" id="violation7">fail 5</a>
+    <h2>t2</h2>
+    <a href="#10" id="pass7">pass 1</a>
+  </div>
+  <h1>Next Header</h1>
+  <a href="#6" id="pass8">pass 1</a>
+</div>
+	<div id="mocha"></div>
+	<script src="link-context.js"></script>
+	<script src="/test/integration/adapter.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "id": "link-context-table-cell",
+  "evaluate": "link-context-table-cell.js",
+  "metadata": {
+    "impact": "serious",
+    "messages": {
+      "pass": "context of link can be determed by link text",
+      "fail": "context of link can not be determed by link text"
+    }
+  }
+}
